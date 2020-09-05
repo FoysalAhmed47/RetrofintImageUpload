@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<ImageView
+    android:id="@+id/imageView"
+    android:layout_width="300dp"
+    android:layout_height="250dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="15dp"
+    android:visibility="gone"
+    />
+
+    <EditText
+        android:id="@+id/EditText_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:hint="Enter Name"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        />
+
+    <!--<EditText-->
+        <!--android:id="@+id/EditText_2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/EditText_1"-->
+        <!--android:hint="Enter Email"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:visibility="gone"-->
+        <!--/>-->
+
+    <Button
+        android:id="@+id/choose_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Image"
+        android:textAllCaps="false"
+        android:layout_below="@id/EditText_1"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="25dp"
+        />
+
+    <Button
+        android:id="@+id/upload_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choose_btn"
+        android:text="Upload Image"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="25dp"
+        android:enabled="false"
+        />
+
+</RelativeLayout>
